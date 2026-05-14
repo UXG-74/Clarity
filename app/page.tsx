@@ -602,7 +602,7 @@ function HealthScreen({ user }: { user: UserData }) {
       <div style={{ display: 'flex', padding: '0 18px', gap: 8, marginBottom: 18 }}>
         {([['moderate', '⚠️ Moderate'], ['severe', '🔴 Severe'], ['recovery', '💚 Recovery']] as [string, string][]).map(([t, l]) => (
           <button key={t} onClick={() => setTab(t as typeof tab)} style={{
-            flex: 1, padding: '10px 4px', border: 'none', borderRadius: 50,
+            flex: 1, padding: '10px 4px', borderRadius: 50,
             background: tab === t ? C.accent : C.card,
             color: tab === t ? '#fff' : C.textSec,
             fontSize: 11, fontWeight: 700, cursor: 'pointer', transition: 'all 0.2s',
